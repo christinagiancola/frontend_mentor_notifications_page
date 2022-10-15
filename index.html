@@ -14,13 +14,106 @@
 		<title>Frontend Mentor | Notifications page</title>
 	</head>
 	<body>
-		<!-- TEXT CONTENT -->
-		<!-- Notifications 3 Mark all as read Mark Webber reacted to your recent post My first tournament today! 1m ago Angela
-		Gray followed you 5m ago Jacob Thompson has joined your group Chess Club 1 day ago Rizky Hasanuddin sent you a
-		private message 5 days ago Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-		I'm already having lots of fun and improving my game. Kimberly Smith commented on your picture 1 week ago Nathan
-		Peterson reacted to your recent post 5 end-game strategies to increase your win rate 2 weeks ago Anna Kim left the
-		group Chess Club 2 weeks ago -->
+		<main class="container h-100">
+			<div class="row h-100">
+				<div class="col-xs-10 col-s-8 col-lg-7 col-xl-6 m-auto">
+					<div class="container">
+						<article class="row heading">Notifications 3 Mark all as read</article>
+						<article class="row notification unread">
+							<div class="col-auto">
+								<img
+									src="./assets/images/avatar-mark-webber.webp"
+									alt="Profile picture of Mark Webber"
+									class="commentImg"
+								/>
+							</div>
+							<div class="col">
+								Mark Webber reacted to your recent post My first tournament today!
+								<div class="timestamp">1m ago</div>
+							</div>
+						</article>
+						<article class="row notification unread">
+							<div class="col-auto">
+								<img
+									src="./assets/images/avatar-angela-gray.webp"
+									alt="Profile picture of Angela Gray"
+									class="commentImg"
+								/>
+							</div>
+							<div class="col">
+								Angela Gray followed you
+								<div class="timestamp">5m ago</div>
+							</div>
+						</article>
+						<article class="row notification unread">
+							<div class="col-auto">
+								<img
+									src="./assets/images/avatar-jacob-thompson.webp"
+									alt="Profile picture of Jacob Thompson"
+									class="commentImg"
+								/>
+							</div>
+							<div class="col">
+								Jacob Thompson has joined your group Chess Club
+								<div class="timestamp">1 day ago</div>
+							</div>
+						</article>
+						<article class="row notification withMessage">
+							<div class="col-auto">
+								<img
+									src="./assets/images/avatar-rizky-hasanuddin.webp"
+									alt="Profile picture of Rizky Hasanuddin"
+									class="commentImg"
+								/>
+							</div>
+							<div class="col">
+								Rizky Hasanuddin sent you a private message
+								<div class="timestamp">5 days ago</div>
+								<div class="message">
+									Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already
+									having lots of fun and improving my game.
+								</div>
+							</div>
+						</article>
+						<article class="row notification">
+							<div class="col-auto">
+								<img
+									src="./assets/images/avatar-kimberly-smith.webp"
+									alt="Profile picture of Kimberly Smith"
+									class="commentImg"
+								/>
+							</div>
+							<div class="col">
+								Kimberly Smith commented on your picture
+								<div class="timestamp">1 week ago</div>
+							</div>
+						</article>
+						<article class="row notification">
+							<div class="col-auto">
+								<img
+									src="./assets/images/avatar-nathan-peterson.webp"
+									alt="Profile picture of Nathan Peterson"
+									class="commentImg"
+								/>
+							</div>
+							<div class="col">
+								Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+								<div class="timestamp">2 weeks ago</div>
+							</div>
+						</article>
+						<article class="row notification">
+							<div class="col-auto">
+								<img src="./assets/images/avatar-anna-kim.webp" alt="Profile picture of Anna Kim" class="commentImg" />
+							</div>
+							<div class="col">
+								Anna Kim left the group Chess Club
+								<div class="timestamp">2 weeks ago</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</main>
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
