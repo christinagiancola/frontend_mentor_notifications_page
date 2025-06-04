@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Simple Tailwind Starter</title>
+	</head>
+	<body class="bg-stone-50">
+		<!-- Main Container -->
+		<div class="flex flex-col items-center min-h-screen w-full space-y-4">
+			<!-- Heading Container -->
+			<div class="flex flex-row items-center justify-between h-auto w-full py-7 px-9">
+				<!-- Heading Left -->
+				<div class="flex flex-row items-center justify-between">
+					<h1 class="font-bold text-xl mr-4">Notifications</h1>
+					<span class="bg-blue-900 font-bold text-stone-50 py-0.5 px-3 rounded-md">3</span>
+				</div>
+
+				<!-- Heading Right -->
+				<div class="flex min-h-full">
+					<button href="#" class="text-gray-500 hover:text-gray-900 transition duration-200">Mark all as read</button>
+				</div>
+			</div>
+
+			<!-- Notifications Container -->
+			<div class="flex flex-col items-center justify-between space-y-2 w-full h-auto my-2">
+				<!-- Notification Item -->
+				<div class="flex flex-row items-center justify-between w-full rounded-md bg-slate-200">
+					<img src="assets/images/avatar-mark-webber.webp" alt="" class="w-12 h-12" />
+					<div class="flex flex-col items-center justify-around">
+						<p class="font-bold text-gray-500">
+							<span>Mark Webber</span>
+							<span> reacted to your recent post </span>
+							<span>My first tournament today!</span>
+							<span class="relative inline-flex size-3">
+								<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
+								<span class="relative inline-flex size-3 rounded-full bg-red-500"></span>
+							</span>
+						</p>
+					</div>
+				</div>
+
+				<div class="flex flex-row bg-slate-300">Item</div>
+
+				<div class="flex flex-row bg-slate-300">Item</div>
+
+				<div class="flex flex-row bg-slate-300">Item</div>
+			</div>
+		</div>
+	</body>
+</html>
