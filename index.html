@@ -8,11 +8,11 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<title>Simple Tailwind Starter</title>
 	</head>
-	<body class="bg-stone-50">
+	<body class="bg-slate-50">
 		<!-- Main Container -->
 		<div class="flex flex-col items-center min-h-screen w-full space-y-4">
 			<!-- Heading Container -->
-			<div class="flex flex-row items-center justify-between h-auto w-full py-7 px-9">
+			<div class="flex flex-row items-center justify-between h-auto w-full max-w-[700px] py-7 px-9">
 				<!-- Heading Left -->
 				<div class="flex flex-row items-center justify-between">
 					<h1 class="font-bold text-xl mr-4">Notifications</h1>
@@ -21,33 +21,133 @@
 
 				<!-- Heading Right -->
 				<div class="flex min-h-full">
-					<button href="#" class="text-gray-500 hover:text-gray-900 transition duration-200">Mark all as read</button>
+					<button href="#" class="font-semibold text-gray-500 hover:text-blue-900 transition duration-200">Mark all as read</button>
 				</div>
 			</div>
 
 			<!-- Notifications Container -->
-			<div class="flex flex-col items-center justify-between space-y-2 w-full h-auto my-2">
-				<!-- Notification Item -->
-				<div class="flex flex-row items-center justify-between w-full rounded-md bg-slate-200">
-					<img src="assets/images/avatar-mark-webber.webp" alt="" class="w-12 h-12" />
-					<div class="flex flex-col items-center justify-around">
-						<p class="font-bold text-gray-500">
-							<span>Mark Webber</span>
-							<span> reacted to your recent post </span>
-							<span>My first tournament today!</span>
-							<span class="relative inline-flex size-3">
+			<div class="flex flex-col items-center justify-between space-y-2 w-full max-w-[700px] h-auto px-9">
+				<!-- Notification Item 1 -->
+				<div class="flex flex-row items-center justify-between w-full space-x-5 rounded-md bg-slate-200 px-8">
+          <!-- User Avatar -->
+          <img src="assets/images/avatar-mark-webber.webp" alt="User Avatar" class="w-12 h-12 object-cover" />
+
+          <!-- Notification Content -->
+					<div class="flex flex-col items-center justify-center my-4">
+						<p class="">
+							<span class="font-bold text-slate-800 hover:text-blue-900 transition duration-200 cursor-pointer">Mark Webber</span>
+							<span class="font-regular text-slate-500"> reacted to your recent post </span>
+							<span class="font-semibold text-slate-500 hover:text-blue-900 transition duration-200 cursor-pointer">My first tournament today!</span>
+							<span class="relative inline-flex size-3 ml-1">
 								<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
 								<span class="relative inline-flex size-3 rounded-full bg-red-500"></span>
 							</span>
+              <div class="w-full font-semithin text-slate-400">1m ago</div>
 						</p>
 					</div>
 				</div>
 
-				<div class="flex flex-row bg-slate-300">Item</div>
+        <!-- Notification Item 2 -->
+				<div class="flex flex-row items-center justify-between w-full space-x-5 rounded-md bg-slate-200 px-8">
+          <!-- User Avatar -->
+          <img src="assets/images/avatar-angela-gray.webp" alt="User Avatar" class="w-12 h-12 object-cover" />
 
-				<div class="flex flex-row bg-slate-300">Item</div>
+          <!-- Notification Content -->
+					<div class="flex flex-col items-center justify-center w-full my-4">
+						<p class="w-full">
+							<span class="font-bold text-slate-800 hover:text-blue-900 transition duration-200 cursor-pointer">Angela Gray</span>
+							<span class="font-regular text-slate-500"> followed you </span>
+							<span class="relative inline-flex size-3 ml-1">
+								<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
+								<span class="relative inline-flex size-3 rounded-full bg-red-500"></span>
+							</span>
+              <div class="w-full font-semithin text-slate-400">5m ago</div>
+						</p>
+					</div>
+				</div>
 
-				<div class="flex flex-row bg-slate-300">Item</div>
+        <!-- Notification Item 3 -->
+				<div class="flex flex-row items-center justify-between w-full space-x-5 rounded-md bg-slate-200 px-8">
+          <!-- User Avatar -->
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="User Avatar" class="w-12 h-12 object-cover" />
+
+          <!-- Notification Content -->
+					<div class="flex flex-col items-center justify-center w-full my-4">
+						<p class="w-full">
+							<span class="font-bold text-slate-800 hover:text-blue-900 transition duration-200 cursor-pointer">Jacob Thompson</span>
+							<span class="font-regular text-slate-500"> has joined your group </span>
+              <span class="font-semibold text-blue-900 transition duration-200 cursor-pointer">Chess Club</span>
+							<span class="relative inline-flex size-3 ml-1">
+								<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
+								<span class="relative inline-flex size-3 rounded-full bg-red-500"></span>
+							</span>
+              <div class="w-full font-semithin text-slate-400">1 day ago</div>
+						</p>
+					</div>
+				</div>
+
+        <!-- Notification Item 4 -->
+				<div class="flex flex-row items-center justify-between w-full space-x-5 rounded-md px-8">
+          <!-- User Avatar -->
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="User Avatar" class="w-12 h-12 object-cover" />
+
+          <!-- Notification Content -->
+					<div class="flex flex-col items-center justify-center w-full my-4">
+						<p class="w-full">
+							<span class="font-bold text-slate-800 hover:text-blue-900 transition duration-200 cursor-pointer">Rizky Hasanuddin</span>
+							<span class="font-regular text-slate-500"> sent you a private message </span>
+              <div class="w-full font-semithin text-slate-400">5 days ago</div>
+						</p>
+					</div>
+				</div>
+
+        <!-- Notification Item 5 -->
+				<div class="flex flex-row items-center justify-between w-full space-x-5 rounded-md px-8">
+          <!-- User Avatar -->
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="User Avatar" class="w-12 h-12 object-cover" />
+
+          <!-- Notification Content -->
+					<div class="flex flex-col items-center justify-center w-full my-4">
+						<p class="w-full">
+							<span class="font-bold text-slate-800 hover:text-blue-900 transition duration-200 cursor-pointer">Kimberly Smith</span>
+							<span class="font-regular text-slate-500"> commented on your picture </span>
+              <div class="w-full font-semithin text-slate-400">1 week ago</div>
+						</p>
+					</div>
+				</div>
+
+        <!-- Notification Item 6 -->
+				<div class="flex flex-row items-center justify-between w-full space-x-5 rounded-md px-8">
+          <!-- User Avatar -->
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="User Avatar" class="w-12 h-12 object-cover" />
+
+          <!-- Notification Content -->
+					<div class="flex flex-col items-center justify-center w-full my-4">
+						<p class="w-full">
+							<span class="font-bold text-slate-800 hover:text-blue-900 transition duration-200 cursor-pointer">Nathan Peterson</span>
+							<span class="font-regular text-slate-500"> reacted to your recent post </span>
+              <span class="font-semibold text-slate-500 mr-1 hover:text-blue-900 transition duration-200 cursor-pointer">5 end-game strategies to increase your win rate</span>
+              <div class="w-full font-semithin text-slate-400">2 weeks ago</div>
+						</p>
+					</div>
+				</div>
+
+        <!-- Notification Item 7 -->
+				<div class="flex flex-row items-center justify-between w-full space-x-5 rounded-md px-8">
+          <!-- User Avatar -->
+          <img src="assets/images/avatar-anna-kim.webp" alt="User Avatar" class="w-12 h-12 object-cover" />
+
+          <!-- Notification Content -->
+					<div class="flex flex-col items-center justify-center w-full my-4">
+						<p class="w-full">
+							<span class="font-bold text-slate-800 hover:text-blue-900 transition duration-200 cursor-pointer">Anna Kim</span>
+							<span class="font-regular text-slate-500"> left the group </span>
+              <span class="font-semibold text-blue-900 transition duration-200 cursor-pointer">Chess Club</span>
+              <div class="w-full font-semithin text-slate-400">2 weeks ago</div>
+						</p>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</body>
